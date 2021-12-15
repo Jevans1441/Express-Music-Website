@@ -1,0 +1,23 @@
+{
+  "name": "Express-Music-Website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jevans1441/Express-Music-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jevans1441/Express-Music-Website/issues"
+  },
+  "homepage": "https://github.com/Jevans1441/Express-Music-Website#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
