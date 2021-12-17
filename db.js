@@ -1,19 +1,46 @@
-//Student list
 module.exports = [
   {
-    name: "josh",
-    handle: "@josh",
+    name: "For Those That Wish to Exist",
+    publishDate: "2021",
+    imgURL: "/public/imgs/ForThoseThatWishToExist.jpg",
+    albumName: "FTTWTE",
+
+    songNames: [
+      "Do You Dream of Armageddon?",
+      "Black Lungs",
+      "Giving Blood",
+      "Discourse is Dead",
+      "Dead Butterflies",
+      "An Ordinary Extinction",
+      "Impermanence",
+      "Flight Without Feathers",
+      "Little Wonder",
+      "Animals",
+      "Libertine",
+      "Goliath",
+      "Demi God",
+      "Meteor",
+      "Dying is Absolutely Safe",
+    ],
   },
   {
-    name: "becca",
-    handle: "@becca",
-  },
-  {
-    name: "jeff",
-    handle: "@jeff",
-  },
-  {
-    name: "tiffany",
-    handle: "@tiffany",
+    name: "All Our Gods Have Abandoned Us",
+    publishDate: "2016",
+    imgURL: "/public/imgs/AllOurGods.jpg",
+    albumName: "AOGHAU",
+
+    songNames: [
+      "Nihilst",
+      "Deathwish",
+      "Phantom Fear",
+      "Downfall",
+      "Gone With The Wind",
+      "The Empty Hourglass",
+      "A Match Made In Heaven",
+      "Gravity",
+      "All Love is Lost",
+      "From The Wilderness",
+      "Memento Mori",
+    ],
   },
 ];
