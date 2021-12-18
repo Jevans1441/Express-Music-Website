@@ -10,6 +10,7 @@ const server = http.createServer(app);
 const db = require("./db");
 const req = require("express/lib/request");
 
+app.use(express.static("public"));
 app.use(express.static("views"));
 
 // register view engine
