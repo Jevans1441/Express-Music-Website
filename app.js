@@ -8,16 +8,16 @@ const app = express();
 
 const server = http.createServer(app);
 const db = require("./db");
-app.use(express.static("public"));
+app.use(express.static("views"));
 // register view engine
 app.set("view engine", "ejs");
-
+app.set("views", "views");
 // ROUTES
 app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.get("/albums", (req, res) => {
+app.get("/albums/", (req, res) => {
   let htmlString = ``;
   for (let i = 0; i < db.length; i++) {
     let album = db[i];
@@ -37,7 +37,7 @@ app.get("/albums/:handle", (req, res) => {
     htmlData += `<h4>Track List: ${album.songNames}</h6>`;
     res.send(htmlData);
   } else {
-    res.send("No album with that name");
+    res.send("Album not available");
   }
 });
 // 404 ERROR
