@@ -1,0 +1,24 @@
+body {
+    background-image: url('/imgs/background2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    color: rgb(238, 235, 235);
+}
+
+
+nav {
+    background-color: black !important;
+    opacity: .5;
+}
+
+li {
+    color: rgb(238, 235, 235);
+}
+
+.brand-logo {
+    color: rgb(238, 235, 235) !important;
+
+}
