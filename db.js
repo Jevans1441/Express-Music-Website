@@ -4,6 +4,7 @@ module.exports = [
     publishDate: "2021",
     imgURL: "/imgs/ForThoseThatWishToExist.jpg",
     albumName: "FTTWTE",
+    webLink: "/FTTWTE",
 
     songNames: [
       "Do You Dream of Armageddon?",

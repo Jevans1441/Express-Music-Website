@@ -8,6 +8,7 @@ const app = express();
 
 const server = http.createServer(app);
 const db = require("./db");
+const req = require("express/lib/request");
 
 app.use(express.static("views"));
 
@@ -18,6 +19,13 @@ app.set("views", "views");
 // ROUTES
 app.get("/", (req, res) => {
   res.render("index");
+});
+
+app.get("/albums", (req, res) => {
+  res.render("albums", {
+    name: db[0].name,
+    albumCover: db[0].imgURL,
+  });
 });
 
 app.get("/albums", (req, res) => {
