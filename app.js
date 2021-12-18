@@ -8,20 +8,23 @@ const app = express();
 
 const server = http.createServer(app);
 const db = require("./db");
+
 app.use(express.static("views"));
+
 // register view engine
 app.set("view engine", "ejs");
 app.set("views", "views");
+
 // ROUTES
 app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.get("/albums/", (req, res) => {
+app.get("/albums", (req, res) => {
   let htmlString = ``;
   for (let i = 0; i < db.length; i++) {
     let album = db[i];
-    htmlString += `<li><a href="${req.path}${album.albumName}">${album.name}</a></li>`;
+    htmlString += `<li><a href="${req.path}/${album.albumName}">${album.name}</a></li>`;
   }
   res.send(`<ul>${htmlString}</ul>`);
 });
@@ -41,9 +44,9 @@ app.get("/albums/:handle", (req, res) => {
   }
 });
 // 404 ERROR
-// app.use((req, res) => {
-//   res.status(404).sendFile("./public/404", { root: __dirname });
-// });
+app.use((req, res) => {
+  res.status(404).render("404");
+});
 
 // listen at port 3000
 app.listen(3000, function () {
