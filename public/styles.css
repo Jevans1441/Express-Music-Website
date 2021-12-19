@@ -24,20 +24,24 @@ li {
 }
 
 #albumCover {
-    width: 25% ;
-    height: 25% ;
+    width: 50% ;
+    height: 50% ;
+    display: flex;
+    margin: auto;
 }
 
-.container {
+.album-container {
+    display: block;
     margin: auto;
+    float: left;
     position: relative;
     color: white;   
-    float: left;
     align-items: center;
+    justify-content: center;
 }
 
 #albumName {
     margin: auto;
     position: relative;
-    align-items: center;
+    text-align: center;
 }

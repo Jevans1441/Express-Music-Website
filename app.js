@@ -52,6 +52,6 @@ app.use((req, res) => {
 });
 
 // listen at port 3000
-app.listen(3000, function () {
+app.listen(port, hostname, function () {
   console.log("server is listening...");
 });
