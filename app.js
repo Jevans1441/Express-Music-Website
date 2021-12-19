@@ -19,23 +19,17 @@ app.set("views", "views");
 
 // ROUTES
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("pages/index");
 });
 
+// Add's img/hyperlink/album name to albums pages
 app.get("/albums", (req, res) => {
-  res.render("albums", {
-    name: db[0].name,
-    albumCover: db[0].imgURL,
+  res.render("pages/albums", {
+    data1Name: db[0].name,
+    data1AlbumCover: db[0].imgURL,
+    data2Name: db[1].name,
+    data2AlbumCover: db[1].imgURL,
   });
-});
-
-app.get("/albums", (req, res) => {
-  let htmlString = ``;
-  for (let i = 0; i < db.length; i++) {
-    let album = db[i];
-    htmlString += `<li><a href="${req.path}/${album.albumName}">${album.name}</a></li>`;
-  }
-  res.send(`<ul>${htmlString}</ul>`);
 });
 
 app.get("/albums/:handle", (req, res) => {

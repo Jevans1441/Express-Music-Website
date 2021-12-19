@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Albums</title>
+</head>
+
+<body>
+    <header>
+        <%- include('../partials/head') -%>
+    </header>
+    <div class="container">
+        <div id="albumName">
+            <%= data1Name %>
+        </div>
+        <a href="/albums/FTTWTE"> <img src="<%= data1AlbumCover %>" id="albumCover" /></a>
+    </div>
+
+    <div class="container">
+        <div id="albumName">
+            <%= data2Name %>
+        </div>
+        <a href="/albums/AOGHAU"> <img src="<%= data2AlbumCover %>" id="albumCover" /></a>
+    </div>
+</body>
+
+</html>

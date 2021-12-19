@@ -23,14 +23,21 @@ li {
 
 }
 
-p {
-    color: white;
-    position: relative;
-    margin: auto;
-    display: inline-block;
+#albumCover {
+    width: 25% ;
+    height: 25% ;
 }
 
-#albumCover {
-    width: 40%;
-    height: 40%;
+.container {
+    margin: auto;
+    position: relative;
+    color: white;   
+    float: left;
+    align-items: center;
+}
+
+#albumName {
+    margin: auto;
+    position: relative;
+    align-items: center;
 }
