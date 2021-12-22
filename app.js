@@ -32,23 +32,20 @@ app.get("/albums", (req, res) => {
   });
 });
 
-app.get("/albums/:handle", (req, res) => {
-  const { handle } = req.params;
-  const album = db.find((f) => f.albumName === handle);
-  if (album) {
-    let htmlData = ``;
-    htmlData += `<h1>${album.name}</h1>`;
-    htmlData += `<img src='${album.imgURL}'>`;
-    htmlData += `<h4>Year: ${album.publishDate}</h4>`;
-    htmlData += `<h4>Track List: ${album.songNames}</h6>`;
-    res.send(htmlData);
-  } else {
-    res.send("Album not available");
-  }
+app.get("/albums/:name", (req, res) => {
+  let link = req.params.name;
+  const album = db.find((album) => album.albumName === link);
+  res.render("pages/albumPage", {
+    name: album.name,
+    releaseDate: album.publishDate,
+    img: album.imgURL,
+    songs: album.songNames,
+  });
 });
+
 // 404 ERROR
 app.use((req, res) => {
-  res.status(404).render("404");
+  res.status(404).render("pages/404.ejs");
 });
 
 // listen at port 3000

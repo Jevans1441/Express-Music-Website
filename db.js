@@ -1,9 +1,9 @@
 module.exports = [
   {
+    albumName: "FTTWTE",
     name: "For Those That Wish to Exist",
     publishDate: "2021",
     imgURL: "/imgs/ForThoseThatWishToExist.jpg",
-    albumName: "FTTWTE",
     webLink: "/FTTWTE",
 
     songNames: [
@@ -25,10 +25,11 @@ module.exports = [
     ],
   },
   {
+    albumName: "AOGHAU",
     name: "All Our Gods Have Abandoned Us",
     publishDate: "2016",
     imgURL: "/imgs/AllOurGods.jpg",
-    albumName: "AOGHAU",
+    webLink: "/AOGHAU",
 
     songNames: [
       "Nihilst",
