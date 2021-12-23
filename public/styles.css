@@ -24,7 +24,7 @@ li {
 }
 
 #albumCover {
-    width: 50% ;
+    width: 20vw;
     height: 50% ;
     display: flex;
     margin: auto;
@@ -44,4 +44,16 @@ li {
     margin: auto;
     position: relative;
     text-align: center;
+}
+
+.img {
+    width: 25% ;
+    height: 25% ;
+    display: flex;
+    margin: auto;
+}
+
+.content {
+    color: rgb(238, 235, 235);
+
 }

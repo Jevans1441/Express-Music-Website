@@ -17,16 +17,23 @@
         <%- include('../partials/head') -%>
     </header>
 
-    <div>
-        <%= img %>
+    <div class="content">
+        <a href="/albums/FTTWTE"> <img src="<%= img %>" id="albumCover" /></a>
+
     </div>
 
-    <div>
+    <div class="releaseDate content">
         <%= releaseDate %>
     </div>
 
-    <div>
-        <%= songs %>
+    <div class="songs content">
+        <ul>
+            <% for (let i=0; i < songs.length; i++) { %>
+                <li>
+                    <%= songs[i] %>
+                </li>
+                <% } %>
+        </ul>
     </div>
 </body>
 
