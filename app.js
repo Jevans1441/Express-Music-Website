@@ -29,12 +29,16 @@ app.get("/albums", (req, res) => {
     data1AlbumCover: db[0].imgURL,
     data2Name: db[1].name,
     data2AlbumCover: db[1].imgURL,
+    data3Name: db[2].name,
+    data3AlbumCover: db[2].imgURL,
+    data4Name: db[3].name,
+    data4AlbumCover: db[3].imgURL,
   });
 });
 
 app.get("/albums/:name", (req, res) => {
   let link = req.params.name;
-  const album = db.find((album) => album.albumName === link);
+  const album = db.find((album) => album.albumName === link); // Loops through link to match databases
   res.render("pages/albumPage", {
     name: album.name,
     releaseDate: album.publishDate,

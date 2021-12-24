@@ -33,12 +33,10 @@ li {
 
 .album-container {
     display: block;
-    margin: auto;
     float: left;
+    margin: auto;
     position: relative;
     color: white;   
-    align-items: center;
-    justify-content: center;
 }
 
 #albumName {
@@ -56,5 +54,4 @@ li {
 
 .content {
     color: rgb(238, 235, 235);
-
 }
