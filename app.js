@@ -25,14 +25,7 @@ app.get("/", (req, res) => {
 // Add's img/hyperlink/album name to albums pages
 app.get("/albums", (req, res) => {
   res.render("pages/albums", {
-    data1Name: db[0].name,
-    data1AlbumCover: db[0].imgURL,
-    data2Name: db[1].name,
-    data2AlbumCover: db[1].imgURL,
-    data3Name: db[2].name,
-    data3AlbumCover: db[2].imgURL,
-    data4Name: db[3].name,
-    data4AlbumCover: db[3].imgURL,
+    dataBase: db,
   });
 });
 

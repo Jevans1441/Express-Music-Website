@@ -1,8 +1,11 @@
-body {
+body, html {
+    height: 100%;
     background-image: url('/imgs/background2.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
+    overflow-x: hidden;
 }
 
 a {
@@ -24,25 +27,46 @@ li {
 
 }
 
-#albumCover {
-    width: 20vw;
-    height: 50% ;
-    display: flex;
-    margin: auto;
+
+.content {
+    color: rgb(238, 235, 235);
 }
 
-.album-container {
-    display: block;
-    float: left;
-    margin: auto;
-    position: relative;
-    color: white;   
+
+.card {
+    background-color: #11ffee00 !important;
+    border: none !important;
+    outline: none;
+
 }
 
-#albumName {
-    margin: auto;
+.card-body {
+    border: none !important;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(189, 188, 188);
+}
+
+.card-deck {
     position: relative;
     text-align: center;
+    color: rgb(252, 252, 252);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-img-top {
+    opacity: .8;
+}
+
+a {
+    text-decoration: none !important;
+    color: white !important;
 }
 
 #albumPage{
@@ -50,8 +74,4 @@ li {
     height: 20vw ;
     margin: auto;
     justify-content: left;
-}
-
-.content {
-    color: rgb(238, 235, 235);
 }

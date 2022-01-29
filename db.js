@@ -4,7 +4,7 @@ module.exports = [
     name: "For Those That Wish to Exist",
     publishDate: "2021",
     imgURL: "/imgs/ForThoseThatWishToExist.jpg",
-    webLink: "/FTTWTE",
+    webLink: "albums/FTTWTE",
 
     songNames: [
       "Do You Dream of Armageddon?",
@@ -29,7 +29,7 @@ module.exports = [
     name: "All Our Gods Have Abandoned Us",
     publishDate: "2016",
     imgURL: "/imgs/AllOurGods.jpg",
-    webLink: "/AOGHAU",
+    webLink: "albums/AOGHAU",
 
     songNames: [
       "Nihilst",
@@ -50,7 +50,7 @@ module.exports = [
     name: "Holy Hell",
     publishDate: "2018",
     imgURL: "/imgs/holyHell.jpg",
-    webLink: "/HH",
+    webLink: "albums/HH",
 
     songNames: [
       "Death Is Not Defeat",
@@ -71,7 +71,7 @@ module.exports = [
     name: "Lost Forever, Lost Together",
     publishDate: "2014",
     imgURL: "/imgs/lostForever.jpg",
-    webLink: "/LFLT",
+    webLink: "albums/LFLT",
 
     songNames: [
       "Gravedigger",
